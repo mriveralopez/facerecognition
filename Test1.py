@@ -6,15 +6,15 @@ faceCascade = cv2.CascadeClassifier(new_path + 'data/haarcascade_frontalface_alt
 #faceCascade = cv2.CascadeClassifier('C:\OpenCV\opencv41\opencv\sources\data\haarcascades_cuda\haarcascade_frontalface_alt.xml')
 
 # Load some sample pictures and learn how to recognize them.
-image_miguel = face_recognition.load_image_file("Miguel Rivera.jpg")
+image_miguel = face_recognition.load_image_file("people/Miguel Rivera.jpg")
 image_encoding_miguel = face_recognition.face_encodings(image_miguel)[0]
 
-# image_hugo = face_recognition.load_image_file("hugo.jpg")
-# image_encoding_hugo = face_recognition.face_encodings(image_hugo)[0]
+image_hugo = face_recognition.load_image_file("people/Navidad.jpg")
+image_encoding_hugo = face_recognition.face_encodings(image_hugo)[0]
 
 known_faces = [
-    image_encoding_miguel
-    # image_encoding_hugo
+    image_encoding_miguel,
+    image_encoding_hugo
 ]
 
 # Initialize some variables
@@ -51,8 +51,8 @@ while True:
         name = None
         if match[0]:
             name = "Miguel Rivera"
-        # elif match[1]:
-        #     name = "Hugo"
+        elif match[1]:
+            name = "Navidad Dulce Navidad"
         else:
             name = "no se quien es"
 
