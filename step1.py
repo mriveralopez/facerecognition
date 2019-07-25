@@ -1,94 +1,95 @@
 import cv2
 import face_recognition
+import numpy as np
+import os
 
-faceCascade = cv2.CascadeClassifier('/venv/lib/python3.7/site-packages/cv2/data/haarcascade_frontalface_alt.xml')
-#faceCascade = cv2.CascadeClassifier('C:\OpenCV\opencv41\opencv\sources\data\haarcascades_cuda\haarcascade_frontalface_alt.xml')
+path = './venv/lib/python3.7/site-packages/cv2/'
 
-# Load some sample pictures and learn how to recognize them.
-image_miguel = face_recognition.load_image_file("josemiguel.jpg")
-image_encoding_miguel = face_recognition.face_encodings(image_miguel)[0]
+class Recognition:
+    def openWithWebCam(self):
+        face_cascade = cv2.CascadeClassifier(path + 'data/haarcascade_frontalface_alt.xml')
 
-# image_hugo = face_recognition.load_image_file("hugo.jpg")
-# image_encoding_hugo = face_recognition.face_encodings(image_hugo)[0]
+        eye_cascade = cv2.CascadeClassifier(path + 'data/haarcascade_eye.xml')
 
-known_faces = [
-    image_encoding_miguel
-    # image_encoding_hugo
-]
+        cap = cv2.VideoCapture(0)
 
-# Initialize some variables
-face_locations = []
-face_encodings = []
-face_names = []
-frame_number = 0
+        while True:
+            ret, img = cap.read()
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+            for (x, y, w, h) in faces:
+                cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                roi_gray = gray[y:y + h, x:x + w]
+                roi_color = img[y:y + h, x:x + w]
+                eyes = eye_cascade.detectMultiScale(roi_gray)
+                for (ex, ey, ew, eh) in eyes:
+                    cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
 
-# grab the reference to the webcam
-vs = cv2.VideoCapture(0)
-font = cv2.FONT_HERSHEY_DUPLEX
+            cv2.imshow('img', img)
 
-# keep looping
-while True:
-    # grab the current frame
-    ret, frame = vs.read()
+            key = cv2.waitKey(1) & 0xFF
 
-    #INICIO JJMD: Reconocimiento Facial
-    # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
-    rgb_frame = frame[:, :, ::-1]
+            # if the 'q' key is pressed, stop the loop
+            if key == ord("q"):
+                break
+            # if the spacebar key is pressed, save face
+            if key == ord(" "):
+                directory = "./people/"
 
+                know_faces = []
+                name_faces = []
 
-    # Find all the faces and face encodings in the current frame of video
-    face_locations = face_recognition.face_locations(rgb_frame)
-    face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
+                for file in os.listdir(directory):
+                    # print(os.path.join(directory, file))
+                    name = file.split(".")[0]
+                    # print(name)
+                    image = face_recognition.load_image_file(os.path.join(directory, file))
+                    image_encoding = face_recognition.face_encodings(image)[0]
+                    know_faces.append(image_encoding)
+                    name_faces.append(name)
 
-    face_names = []
+                rgb_img = img[:, :, ::-1]
 
-    for face_encoding in face_encodings:
-        # See if the face is a match for the known face(s)
-        match = face_recognition.compare_faces(known_faces, face_encoding, tolerance = 0.50)
+                # Find all the faces and face encodings in the current frame of video
+                face_locations = face_recognition.face_locations(rgb_img)
+                face_encodings = face_recognition.face_encodings(rgb_img, face_locations)
 
-        # If you had more than 2 faces, you could make this logic a lot prettier
-        # but I kept it simple for the demo
-        name = None
-        if match[0]:
-            name = "Miguel Rivera"
-        # elif match[1]:
-        #     name = "Hugo"
-        else:
-            name = "no se quien es"
+                for face_encoding in face_encodings:
+                    match = face_recognition.compare_faces(know_faces, face_encoding, tolerance=0.50)
+                    print(match)
 
-        face_names.append(name)
+        cap.release()
+        cv2.destroyAllWindows()
 
-        #for (x, y, w, h) in face_locations:
-        #    cv2.putText(frame, name, (y, x), font, 0.5, (255, 255, 255), 1)
+    def readFacesFromPicturesFiles(self, img):
+        import os
+        import face_recognition
 
-    for (top, right, bottom, left), name in zip(face_locations, face_names):
-        if not name:
-            continue
+        directory = "./people/"
 
-        # Draw a box around the face
-        cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+        know_faces = []
+        name_faces = []
 
-        # Draw a label with a name below the face
-        #cv2.rectangle(frame, (left, bottom - 25), (right, bottom), (0, 0, 255), cv2.FILLED)
-        font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(frame, name, (left + 6, bottom - 100), font, 0.5, (0, 0, 255), 1)
+        for file in os.listdir(directory):
+            # print(os.path.join(directory, file))
+            name = file.split(".")[0]
+            # print(name)
+            image = face_recognition.load_image_file(file)
+            image_encoding = face_recognition.face_encodings(image)[0]
+            know_faces.append(image_encoding)
+            name_faces.append(name)
 
-    #FIN JJMD: Reconocimiento Facial
+        Recognition.writeNames(img, know_faces, name_faces)
 
-    if frame is None:
-        break
+    def writeNames(self, img, know_faces, names_faces):
+        import face_recognition
+        
+        rgb_img = img[:, :, ::-1]
 
-        faces = faceCascade.detectMultiScale(frame)
+        # Find all the faces and face encodings in the current frame of video
+        face_locations = face_recognition.face_locations(rgb_img)
+        face_encodings = face_recognition.face_encodings(rgb_img, face_locations)
 
-    # show the frame to our screen
-    cv2.imshow("Video", frame)
-    key = cv2.waitKey(1) & 0xFF
-
-    # if the 'q' key is pressed, stop the loop
-    if key == ord("q"):
-        break
-    elif key == ord(" "):
-        print(name)
-
-# close all windows
-cv2.destroyAllWindows()
+        for face_encoding in face_encodings:
+            match = face_recognition.compare_faces(know_faces, face_encoding, tolerance=0.50)
+            print(match)
