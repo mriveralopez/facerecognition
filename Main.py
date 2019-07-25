@@ -1,3 +1,3 @@
-import step1 as rec
+import Recognition as rec
 x = rec.Recognition()
 x.openWithWebCam()

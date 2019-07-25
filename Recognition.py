@@ -11,6 +11,8 @@ class Recognition:
 
         eye_cascade = cv2.CascadeClassifier(path + 'data/haarcascade_eye.xml')
 
+        # smile_cascade = cv2.CascadeClassifier(path + 'data/haarcascade_smile.xml')
+
         know_faces = []
         name_faces = []
         r = 1
@@ -28,6 +30,9 @@ class Recognition:
                 eyes = eye_cascade.detectMultiScale(roi_gray)
                 for (ex, ey, ew, eh) in eyes:
                     cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
+                # smiles = smile_cascade.detectMultiScale(roi_gray)
+                # for (sx, sy, sw, sh) in smiles:
+                #     cv2.rectangle(roi_color, (sx, sy), (sx + sw, sy + sh), (0, 0, 255), 2)
 
             cv2.imshow('img', img)
 
@@ -54,6 +59,7 @@ class Recognition:
                     image_encoding = face_recognition.face_encodings(image)[0]
                     know_faces.append(image_encoding)
                     name_faces.append(name)
+                print("faces loaded")
 
             # if the spacebar key is pressed, save face
             if key == ord(" "):
@@ -66,7 +72,7 @@ class Recognition:
                 match = []
 
                 for face_encoding in face_encodings:
-                    match = face_recognition.compare_faces(know_faces, face_encoding, tolerance=0.50)
+                    match = face_recognition.compare_faces(know_faces, face_encoding, tolerance = 0.50)
 
                 # print(match)
                 i = 0
