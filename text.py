@@ -6,7 +6,7 @@ faceCascade = cv2.CascadeClassifier(new_path + 'data/haarcascade_frontalface_alt
 #faceCascade = cv2.CascadeClassifier('C:\OpenCV\opencv41\opencv\sources\data\haarcascades_cuda\haarcascade_frontalface_alt.xml')
 
 # Load some sample pictures and learn how to recognize them.
-image_miguel = face_recognition.load_image_file("josemiguel.jpg")
+image_miguel = face_recognition.load_image_file("Miguel Rivera.jpg")
 image_encoding_miguel = face_recognition.face_encodings(image_miguel)[0]
 
 # image_hugo = face_recognition.load_image_file("hugo.jpg")
