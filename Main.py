@@ -1,3 +1,3 @@
 import Recognition as rec
 x = rec.Recognition()
-x.openWithWebCam()
+x.openWithWebCam1()

@@ -1,7 +1,8 @@
 # Jetbrains IDEs: PHPStorm / RubyMine
 # (No todo el mundo tiene que saber que los ficheros .idea son de un
 # entorno de desarrollo)
-.idea
-
+.idea/
+__pycache__/
 #Ignorando los ficheros de la carpeta venv
 venv/
+people/
