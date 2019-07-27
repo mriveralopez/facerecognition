@@ -5,4 +5,3 @@
 __pycache__/
 #Ignorando los ficheros de la carpeta venv
 venv/
-people/
