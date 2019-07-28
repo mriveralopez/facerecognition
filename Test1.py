@@ -1,21 +1,15 @@
 import cv2
 import face_recognition
+import pruebas as fc
 
 new_path = './venv/lib/python3.7/site-packages/cv2/'
 faceCascade = cv2.CascadeClassifier(new_path + 'data/haarcascade_frontalface_alt.xml')
 #faceCascade = cv2.CascadeClassifier('C:\OpenCV\opencv41\opencv\sources\data\haarcascades_cuda\haarcascade_frontalface_alt.xml')
 
-# Load some sample pictures and learn how to recognize them.
-image_miguel = face_recognition.load_image_file("people/Miguel Rivera.jpg")
-image_encoding_miguel = face_recognition.face_encodings(image_miguel)[0]
+known_faces = []
+name_faces = []
 
-image_hugo = face_recognition.load_image_file("people/Navidad.jpg")
-image_encoding_hugo = face_recognition.face_encodings(image_hugo)[0]
-
-known_faces = [
-    image_encoding_miguel,
-    image_encoding_hugo
-]
+fc.loadKnowFaces("./knowFaces/", known_faces, name_faces)
 
 # Initialize some variables
 face_locations = []
@@ -51,8 +45,6 @@ while True:
         name = None
         if match[0]:
             name = "Miguel Rivera"
-        elif match[1]:
-            name = "Navidad Dulce Navidad"
         else:
             name = "no se quien es"
 
@@ -78,7 +70,7 @@ while True:
     if frame is None:
         break
 
-    faces = faceCascade.detectMultiScale(frame)
+    # faces = faceCascade.detectMultiScale(frame)
 
     # show the frame to our screen
     cv2.imshow("Video", frame)
