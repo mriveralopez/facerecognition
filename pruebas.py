@@ -1,6 +1,7 @@
 import cv2
 import face_recognition
 import os
+import time
 
 def getImagesPathFromFile(path):
     images = []
@@ -73,8 +74,7 @@ def images():
     cv2.destroyAllWindows()
 
 def video():
-    cap = cv2.VideoCapture("./people/video.MOV")
-    # cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0)
 
     knowFaces = []
     nameFaces = []
@@ -116,7 +116,7 @@ def video():
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             match = face_recognition.compare_faces(knowFaces, face_encoding, tolerance=0.50)
-            print(match)
+            # print(match)
             i = 0
             x = 1
             for m in match:
@@ -126,19 +126,6 @@ def video():
                 i = i + 1
             if x:
                 face_names.append("Desconocido")
-
-            # If you had more than 2 faces, you could make this logic a lot prettier
-            # but I kept it simple for the demo
-            # name = None
-            # if match[0]:
-            #     name = "Miguel Rivera"
-            # else:
-            #     name = "no se quien es"
-            #
-            # face_names.append(name)
-
-            # for (x, y, w, h) in face_locations:
-            #    cv2.putText(frame, name, (y, x), font, 0.5, (255, 255, 255), 1)
 
         for (top, right, bottom, left), name in zip(face_locations, face_names):
             if not name:
@@ -158,8 +145,18 @@ def video():
         # if the 'q' key is pressed, stop the loop
         if key == ord("q"):
             break
-        elif key == ord(" "):
-            print(name)
+        elif key == ord("e"):
+            # print(face_names)
+            for face_name in face_names:
+                file_name = "Entrada " + face_name + " " + time.strftime("%d-%m-%y %H-%M-%S")
+                print(file_name)
+                cv2.imwrite('./rec/' + file_name + '.jpg', frame)
+        elif key == ord("s"):
+            # print(face_names)
+            for face_name in face_names:
+                file_name = "Salida " + face_name + " " + time.strftime("%d-%m-%y %H-%M-%S")
+                print(file_name)
+                cv2.imwrite('./rec/' + file_name + '.jpg', frame)
 
     cap.release()
     cv2.destroyAllWindows()
