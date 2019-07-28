@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/pruebas.py" line="124" mnemonic="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e7b698d4-b850-451c-ba26-d972c10ec0cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people/depositphotos_158141350-stock-photo-group-of-people-in-the.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/people/images.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pruebas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+            <state relative-caret-position="199">
+              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -103,11 +104,6 @@
               <item name="facerecognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="facerecognition" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="facerecognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="facerecognition" type="462c0819:PsiDirectoryNode" />
-              <item name="people" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -121,15 +117,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/people" />
-      <recent name="$PROJECT_DIR$/xml" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/knowFaces" />
       <recent name="$PROJECT_DIR$/people" />
       <recent name="$PROJECT_DIR$/rec" />
       <recent name="$PROJECT_DIR$/personas" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/people" />
+      <recent name="$PROJECT_DIR$/xml" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,12 +282,12 @@
     <frame x="115" y="30" width="1400" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,6 +355,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Main.py">
@@ -395,18 +405,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Miguel.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Josh Nichols.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Drake Parker.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/titi.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/knowFaces/Miguel.png" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/titi.png" />
     <entry file="file://$PROJECT_DIR$/Test1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -417,57 +417,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/people/depositphotos_158141350-stock-photo-group-of-people-in-the.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/people/depositphotos_158141350-stock-photo-group-of-people-in-the.jpg" />
     <entry file="file://$PROJECT_DIR$/people/dyj.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/people/icarly.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Josh Nichols.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Spenser.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/depositphotos_158141350-stock-photo-group-of-people-in-the_crop0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/images_crop0.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/images.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop0.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop1.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop2.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop3.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop4.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop5.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop6.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop7.jpg" />
+    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop8.jpg" />
+    <entry file="file://$PROJECT_DIR$/people/depositphotos_158141350-stock-photo-group-of-people-in-the_crop0.jpg" />
+    <entry file="file://$PROJECT_DIR$/people/images_crop0.jpeg" />
+    <entry file="file://$PROJECT_DIR$/people/images.jpeg" />
     <entry file="file://$PROJECT_DIR$/knowFaces/Josh Nichols.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -508,49 +476,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Carly 27-07-19 22-40-51.jpg">
+    <entry file="file://$PROJECT_DIR$/rec/Carly 27-07-19 22-40-51.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Carly 27-07-19 22-43-26.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Drake Parker 27-07-19 22-43-38.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/dyj_crop1 27-07-19 22-43-38.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/dyj_crop3 27-07-19 22-43-38.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/icarly_crop1 27-07-19 22-43-26.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/icarly_crop3 27-07-19 22-43-26.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/icarly_crop4 27-07-19 22-43-26.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Josh Nichols 27-07-19 22-43-38.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Megan Parker 27-07-19 22-40-54.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Megan Parker 27-07-19 22-43-26.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Megan Parker 27-07-19 22-43-38.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Spenser 27-07-19 22-43-26.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Salida Miguel Rivera 28-07-19 17-37-27.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Carly 27-07-19 22-43-26.jpg">
+    <entry file="file://$PROJECT_DIR$/rec/Entrada Miguel Rivera 28-07-19 17-37-24.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Drake Parker 27-07-19 22-43-38.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/dyj_crop1 27-07-19 22-43-38.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/dyj_crop3 27-07-19 22-43-38.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/icarly_crop1 27-07-19 22-43-26.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/icarly_crop3 27-07-19 22-43-26.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/icarly_crop4 27-07-19 22-43-26.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Josh Nichols 27-07-19 22-43-38.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Megan Parker 27-07-19 22-40-54.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Megan Parker 27-07-19 22-43-26.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Megan Parker 27-07-19 22-43-38.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Spenser 27-07-19 22-43-26.jpg">
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 28-07-19 17-48-08 Entrada.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pruebas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+        <state relative-caret-position="199">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -37,6 +37,8 @@ def saveFacesWithRectangle(img, faces, imagen_dir, color, width):
     cv2.imwrite(dir, img)
 
 def loadKnowFaces(path, knowFaces, nameFaces):
+    knowFaces.clear()
+    nameFaces.clear()
     imgs = getImagesPathFromFile(path)
     # print(imgs)
     for img in imgs:
@@ -76,29 +78,12 @@ def images():
 def video():
     cap = cv2.VideoCapture(0)
 
+    knowFacesPath = "./knowFaces/"
+
     knowFaces = []
     nameFaces = []
 
-    loadKnowFaces("./knowFaces/", knowFaces, nameFaces)
-
-    # while True:
-    #     ret, frame = cap.read()
-    #     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    #     face_locations = faceCascade.detectMultiScale(gray, 1.3, 5)
-    #
-    #     print(face_locations)
-    #
-    #     for (x, y, w, h) in face_locations:
-    #         drawRecqtangle(frame, x, y, w, h, (255, 0, 0), 2)
-    #
-    #
-    #     cv2.imshow('img', frame)
-    #
-    #     key = cv2.waitKey(1) & 0xFF
-    #
-    #     # if the 'q' key is pressed, stop the loop
-    #     if key == ord("q"):
-    #         break
+    loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
 
     while True:
         # grab the current frame
@@ -137,7 +122,7 @@ def video():
             # Draw a label with a name below the face
             # cv2.rectangle(frame, (left, bottom - 25), (right, bottom), (0, 0, 255), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
-            cv2.putText(frame, name, (left + 6, bottom - 100), font, 0.5, (0, 0, 255), 1)
+            cv2.putText(frame, name, (left + 5,  bottom - 5), font, 0.5, (255, 255, 0), 1)
 
         cv2.imshow("Video", frame)
         key = cv2.waitKey(1) & 0xFF
@@ -145,16 +130,18 @@ def video():
         # if the 'q' key is pressed, stop the loop
         if key == ord("q"):
             break
+        elif key == ord("r"):
+            loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
         elif key == ord("e"):
             # print(face_names)
             for face_name in face_names:
-                file_name = "Entrada " + face_name + " " + time.strftime("%d-%m-%y %H-%M-%S")
+                file_name =  face_name + " " + time.strftime("%d-%m-%y %H-%M-%S Entrada")
                 print(file_name)
                 cv2.imwrite('./rec/' + file_name + '.jpg', frame)
         elif key == ord("s"):
             # print(face_names)
             for face_name in face_names:
-                file_name = "Salida " + face_name + " " + time.strftime("%d-%m-%y %H-%M-%S")
+                file_name = face_name + " " + time.strftime("%d-%m-%y %H-%M-%S Salida")
                 print(file_name)
                 cv2.imwrite('./rec/' + file_name + '.jpg', frame)
 
