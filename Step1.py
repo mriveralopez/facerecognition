@@ -132,6 +132,8 @@ def video():
             break
         elif key == ord("r"):
             loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
+        elif key == ord("h"):
+            h = 1
         elif key == ord("e"):
             # print(face_names)
             for face_name in face_names:

@@ -85,6 +85,9 @@ def video():
 
     loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
 
+    people = []
+    cam = "Entrada"
+
     while True:
         # grab the current frame
         ret, frame = cap.read()
@@ -123,6 +126,7 @@ def video():
             # cv2.rectangle(frame, (left, bottom - 25), (right, bottom), (0, 0, 255), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
             cv2.putText(frame, name, (left + 5,  bottom - 5), font, 0.5, (255, 255, 0), 1)
+
 
         cv2.imshow("Video", frame)
         key = cv2.waitKey(1) & 0xFF

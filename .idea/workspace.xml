@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b698d4-b850-451c-ba26-d972c10ec0cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Step1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Step1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Step1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Step2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Step2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,35 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="e#82#100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Step1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="136" column="40" selection-end-line="160" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Step2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2025">
-              <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+            <state relative-caret-position="135">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -109,6 +85,7 @@
         <option value="$PROJECT_DIR$/pruebas.py" />
         <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Step2.py" />
+        <option value="$PROJECT_DIR$/Step1.py" />
       </list>
     </option>
   </component>
@@ -134,7 +111,7 @@
             <path>
               <item name="facerecognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="facerecognition" type="462c0819:PsiDirectoryNode" />
-              <item name="imagesWithText" type="462c0819:PsiDirectoryNode" />
+              <item name="people" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,16 +126,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/imagesWithText" />
-      <recent name="$PROJECT_DIR$/knowFaces" />
-      <recent name="$PROJECT_DIR$/people" />
-      <recent name="$PROJECT_DIR$/rec" />
-      <recent name="$PROJECT_DIR$/personas" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/people" />
       <recent name="$PROJECT_DIR$/xml" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/knowFaces" />
+      <recent name="$PROJECT_DIR$/imagesWithText" />
+      <recent name="$PROJECT_DIR$/people" />
+      <recent name="$PROJECT_DIR$/rec" />
+      <recent name="$PROJECT_DIR$/personas" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.pruebas">
     <configuration name="Recorte" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="facerecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,8 +258,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test" />
         <item itemvalue="Python.pruebas" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.text" />
         <item itemvalue="Python.face_recognition" />
         <item itemvalue="Python.Recorte" />
@@ -315,12 +292,12 @@
     <frame x="115" y="30" width="1400" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,27 +381,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/people/dyj.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/icarly.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop0.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop1.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop2.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop3.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop4.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop5.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop6.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop7.jpg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/depositphotos_158141350-stock-photo-group-of-people-in-the_crop8.jpg" />
-    <entry file="file://$PROJECT_DIR$/people/depositphotos_158141350-stock-photo-group-of-people-in-the_crop0.jpg" />
-    <entry file="file://$PROJECT_DIR$/people/images_crop0.jpeg" />
-    <entry file="file://$PROJECT_DIR$/people/images.jpeg" />
-    <entry file="file://$PROJECT_DIR$/knowFaces/Josh Nichols.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/knowFaces/Drake Parker.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -516,7 +472,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="150">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="e#82#100#0" expanded="true" />
@@ -524,20 +480,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Step1.py">
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-23 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-25 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-39 Salida.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="136" column="40" selection-end-line="160" selection-end-column="7" />
+        <state relative-caret-position="1046">
+          <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Step2.py">
+    <entry file="file://$PROJECT_DIR$/people/icarly.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_rectangle.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/icarly_rectangle.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/icarly_crop1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/icarly_crop0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/icarly_crop4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+        <state relative-caret-position="135">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
