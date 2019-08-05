@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b698d4-b850-451c-ba26-d972c10ec0cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Step1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Step1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Step2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Step2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,10 +17,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Step2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="165" column="34" lean-forward="true" selection-start-line="165" selection-start-column="34" selection-end-line="165" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/listas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Step1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="222">
+              <caret line="97" selection-end-line="162" selection-end-column="7" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -84,14 +104,15 @@
         <option value="$PROJECT_DIR$/Test1.py" />
         <option value="$PROJECT_DIR$/pruebas.py" />
         <option value="$PROJECT_DIR$/Test.py" />
-        <option value="$PROJECT_DIR$/Step2.py" />
         <option value="$PROJECT_DIR$/Step1.py" />
+        <option value="$PROJECT_DIR$/listas.py" />
+        <option value="$PROJECT_DIR$/Step2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="115" />
-    <option name="y" value="30" />
+    <option name="x" value="12" />
+    <option name="y" value="27" />
     <option name="width" value="1400" />
     <option name="height" value="987" />
   </component>
@@ -111,7 +132,7 @@
             <path>
               <item name="facerecognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="facerecognition" type="462c0819:PsiDirectoryNode" />
-              <item name="people" type="462c0819:PsiDirectoryNode" />
+              <item name="knowFaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -126,16 +147,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/knowFaces" />
+      <recent name="$PROJECT_DIR$/rec" />
+      <recent name="$PROJECT_DIR$/imagesWithText" />
+      <recent name="$PROJECT_DIR$/people" />
+      <recent name="$PROJECT_DIR$/personas" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/people" />
       <recent name="$PROJECT_DIR$/xml" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/knowFaces" />
-      <recent name="$PROJECT_DIR$/imagesWithText" />
-      <recent name="$PROJECT_DIR$/people" />
-      <recent name="$PROJECT_DIR$/rec" />
-      <recent name="$PROJECT_DIR$/personas" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,8 +171,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pruebas">
-    <configuration name="Recorte" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Step2">
+    <configuration name="Step2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="facerecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,7 +184,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Recorte.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Step2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,7 +214,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="face_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="listas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="facerecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,7 +226,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FaceRecognition.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/listas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Step2" />
+        <item itemvalue="Python.listas" />
         <item itemvalue="Python.pruebas" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.text" />
-        <item itemvalue="Python.face_recognition" />
-        <item itemvalue="Python.Recorte" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +310,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="30" width="1400" height="987" extended-state="0" />
+    <frame x="12" y="27" width="1400" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
@@ -381,49 +402,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/knowFaces/Drake Parker.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/icarly_crop4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/icarly_crop3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Carly.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/icarly_crop1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Spenser.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/Megan Parker.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/dyj_crop3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knowFaces/dyj_crop1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Carly 27-07-19 22-40-51.jpg" />
-    <entry file="file://$PROJECT_DIR$/rec/Carly 27-07-19 22-43-26.jpg" />
-    <entry file="file://$PROJECT_DIR$/rec/Drake Parker 27-07-19 22-43-38.jpg" />
-    <entry file="file://$PROJECT_DIR$/rec/dyj_crop1 27-07-19 22-43-38.jpg" />
-    <entry file="file://$PROJECT_DIR$/rec/dyj_crop3 27-07-19 22-43-38.jpg" />
-    <entry file="file://$PROJECT_DIR$/rec/icarly_crop1 27-07-19 22-43-26.jpg" />
     <entry file="file://$PROJECT_DIR$/rec/icarly_crop3 27-07-19 22-43-26.jpg" />
     <entry file="file://$PROJECT_DIR$/rec/icarly_crop4 27-07-19 22-43-26.jpg" />
     <entry file="file://$PROJECT_DIR$/rec/Josh Nichols 27-07-19 22-43-38.jpg" />
@@ -480,67 +458,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-23 Entrada.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-25 Entrada.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-39 Salida.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Step2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-23 Entrada.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-25 Entrada.jpg" />
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 02-08-19 20-57-39 Salida.jpg" />
     <entry file="file://$PROJECT_DIR$/people/icarly.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/people/dyj.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/people/dyj_rectangle.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/icarly_rectangle.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/dyj_crop0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/dyj_crop1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/dyj_crop2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/dyj_crop3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/icarly_crop1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/icarly_crop0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/icarly_crop4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/people/dyj_crop4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/people/dyj_rectangle.png" />
+    <entry file="file://$PROJECT_DIR$/people/icarly_rectangle.jpg" />
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop0.png" />
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop1.png" />
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop2.png" />
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop3.png" />
+    <entry file="file://$PROJECT_DIR$/people/icarly_crop1.jpg" />
+    <entry file="file://$PROJECT_DIR$/people/icarly_crop0.jpg" />
+    <entry file="file://$PROJECT_DIR$/people/icarly_crop4.jpg" />
+    <entry file="file://$PROJECT_DIR$/people/dyj_crop4.png" />
     <entry file="file://$PROJECT_DIR$/Step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="222">
+          <caret line="97" selection-end-line="162" selection-end-column="7" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 09-58-42 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 09-58-50 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 09-59-44 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 10-00-57 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 10-01-10 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="2821" selection-start-line="2821" selection-end-line="2821" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/face_recognition/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knowFaces/Desconocido12.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knowFaces/Miguel Rivera.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 10-11-52 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 05-08-19 10-13-24 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 19-08-05 10-54-53 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 19-08-05 10-55-01 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 19-08-05 10-56-29 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rec/Miguel Rivera 19-08-05 10-57-10 Entrada.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="165" column="34" lean-forward="true" selection-start-line="165" selection-start-column="34" selection-end-line="165" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

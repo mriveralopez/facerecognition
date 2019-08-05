@@ -16,6 +16,10 @@ def cropFile(pathin, pathout, x, y, w, h):
     crop_img = img[y:y+h, x:x+w]
     cv2.imwrite(pathout, crop_img)
 
+def cropLiveImage(name, frame, x, y, w, h):
+    crop_img = frame[y:y+h, x:x+w]
+    cv2.imwrite('./knowFaces/' + name + '.jpg', crop_img)
+
 def saveOnlyFaces(imagen_dir, img, faces):
     i = 0
     for (x, y, w, h) in faces:
@@ -47,10 +51,20 @@ def loadKnowFaces(path, knowFaces, nameFaces):
         name = img.split(".")[0]
         knowFaces.append(image_encoding)
         nameFaces.append(name)
-    print("faces loaded")
+    print(getTime("/", ":") + " faces loaded")
 
 def recogniting(knowFaces):
     f = 0
+
+def marcar(face_name, image, status):
+    # print(face_name)
+    file_name = face_name + " " + getTime("-", "-") + " " + status
+    print(file_name)
+    cv2.imwrite('./rec/' + file_name + '.jpg', image)
+
+def getTime(dateSplit, timeSplit):
+    # return time.strftime("%d" + dateSplit + "%m" + dateSplit + "%y %H" + timeSplit + "%M" + timeSplit + "%S")
+    return time.strftime("%y" + dateSplit + "%m" + dateSplit + "%d %H" + timeSplit + "%M" + timeSplit + "%S")
 
 def images():
     imagesPath = "./people/"
@@ -84,12 +98,14 @@ def video():
     nameFaces = []
 
     loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
+    r=0
 
-    people = []
-    cam = "Entrada"
+    liveFaces = []
+    previousFaces = []
 
     while True:
         # grab the current frame
+
         ret, frame = cap.read()
 
         # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
@@ -101,19 +117,27 @@ def video():
 
         face_names = []
 
+        print(getTime("/", ":"))
+        print(previousFaces)
+        print(liveFaces)
+
+        previousFaces = liveFaces
+        liveFaces = []
+
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             match = face_recognition.compare_faces(knowFaces, face_encoding, tolerance=0.50)
-            # print(match)
-            i = 0
-            x = 1
-            for m in match:
-                if m:
-                    face_names.append(nameFaces[i])
-                    x = 0
-                i = i + 1
-            if x:
-                face_names.append("Desconocido")
+            # print(match.index(True))
+
+            try:
+                i = match.index(True)
+                face_names.append(nameFaces[i])
+                if liveFaces.__contains__(nameFaces[i]):
+                    continue
+                else:
+                    liveFaces.append(nameFaces[i])
+            except Exception:
+                face_names.append('Desconocido')
 
         for (top, right, bottom, left), name in zip(face_locations, face_names):
             if not name:
@@ -126,20 +150,42 @@ def video():
             # cv2.rectangle(frame, (left, bottom - 25), (right, bottom), (0, 0, 255), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
             cv2.putText(frame, name, (left + 5,  bottom - 5), font, 0.5, (255, 255, 0), 1)
-
+            # if(name == "Desconocido"):
+            #     name = "Desconocido" + str(knowFaces.__len__())
+            #     cropLiveImage(name, frame, top, right, bottom, left)
+            #     r = 1
 
         cv2.imshow("Video", frame)
+
+        # for prev in previousFaces:
+        #     if(liveFaces.__contains__(prev)):
+        #         continue
+        #     else:
+        #         marcar(prev, frame, "Entrada")
+        #         print(previousFaces)
+        #         print(liveFaces)
+
+        for live in liveFaces:
+            if (previousFaces.__contains__(live)):
+                continue
+            else:
+                marcar(live, frame, "Entrada")
+                print(previousFaces)
+                print(liveFaces)
+
         key = cv2.waitKey(1) & 0xFF
 
         # if the 'q' key is pressed, stop the loop
         if key == ord("q"):
             break
-        elif key == ord("r"):
+        elif key == ord("r") or r:
             loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
+        elif key == ord("h"):
+            h = 1
         elif key == ord("e"):
             # print(face_names)
             for face_name in face_names:
-                file_name =  face_name + " " + time.strftime("%d-%m-%y %H-%M-%S Entrada")
+                file_name =  face_name + " " + getTime("-", "-") + " Entrada"
                 print(file_name)
                 cv2.imwrite('./rec/' + file_name + '.jpg', frame)
         elif key == ord("s"):
