@@ -41,6 +41,7 @@ def saveFacesWithRectangle(img, faces, imagen_dir, color, width):
     cv2.imwrite(dir, img)
 
 def loadKnowFaces(path, knowFaces, nameFaces):
+    print(getTime("/", ":") + " loading know faces")
     knowFaces.clear()
     nameFaces.clear()
     imgs = getImagesPathFromFile(path)
@@ -51,7 +52,7 @@ def loadKnowFaces(path, knowFaces, nameFaces):
         name = img.split(".")[0]
         knowFaces.append(image_encoding)
         nameFaces.append(name)
-    print(getTime("/", ":") + " faces loaded")
+    print(getTime("/", ":") + " know faces loaded")
 
 def recogniting(knowFaces):
     f = 0
@@ -117,7 +118,7 @@ def video():
 
         face_names = []
 
-        print(getTime("/", ":"))
+        print(getTime("/", ":") + " frame")
         print(previousFaces)
         print(liveFaces)
 
@@ -198,6 +199,8 @@ def video():
     cap.release()
     cv2.destroyAllWindows()
 
+print(getTime("/",":") + " init face recognition")
+print(getTime("/",":") + " loading cascade path")
 cascade_path = "./venv/lib/python3.7/site-packages/cv2/data/"
 
 faceCascade = cv2.CascadeClassifier(cascade_path + "haarcascade_frontalface_alt.xml")
@@ -207,5 +210,7 @@ faceCascade = cv2.CascadeClassifier(cascade_path + "haarcascade_frontalface_alt.
 # faceCascade = cv2.CascadeClassifier(cascade_path + "haarcascade_licence_plate_rus_16stages.xml")
 # faceCascade = cv2.CascadeClassifier(cascade_path + "haarcascade_smile.xml")
 # faceCascade = cv2.CascadeClassifier(cascade_path + "haarcascade_fullbody.xml")
+
+print(getTime("/",":") + " cascade path loaded")
 
 video()
