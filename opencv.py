@@ -2,6 +2,8 @@ import cv2
 import face_recognition
 import os
 import Utils as util
+import WS
+from pprint import pprint
 
 def getImagesPathFromFile(path):
     images = []
@@ -52,6 +54,24 @@ def loadKnowFaces(path, knowFaces, nameFaces):
         knowFaces.append(image_encoding)
         nameFaces.append(name)
     print(util.getTime("/", ":") + " know faces loaded")
+
+def loadKnowFacesFromDB(path, knowFaces, nameFaces):
+    print(util.getTime("/", ":") + " loading know faces from DB")
+
+    knowFaces.clear()
+    nameFaces.clear()
+
+    employees = WS.GET("Employee/list.php")
+
+    print(employees)
+
+    for employee in employees.json():
+        image = face_recognition.load_image_file(path + employee.get('code') + ".png")
+        image_encoding = face_recognition.face_encodings(image)[0]
+        name = employee.get('name')
+        knowFaces.append(image_encoding)
+        nameFaces.append(name)
+    print(util.getTime("/", ":") + " know faces loaded from DB")
 
 # def recogniting(knowFaces):
 #     f = 0

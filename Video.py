@@ -4,17 +4,22 @@ import opencv as cv
 import Utils as util
 
 def video():
+
+    print(util.getTime("/", ":") + " loading Video Capture")
+
     cap = []
     cap.append(cv2.VideoCapture(0))
-    cap.append(cv2.VideoCapture(0))
+    # cap.append(cv2.VideoCapture(0))
+
+    print(util.getTime("/", ":") + " Video Capture loaded")
 
     knowFacesPath = "./knowFaces/"
 
     knowFaces = []
     nameFaces = []
 
-    cv.loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
-    r=0
+    cv.loadKnowFacesFromDB(knowFacesPath, knowFaces, nameFaces)
+    r = 0
 
     liveFaces = []
     previousFaces = []
@@ -98,7 +103,7 @@ def video():
             if key == ord("q"):
                 break
             elif key == ord("r") or r:
-                cv.loadKnowFaces(knowFacesPath, knowFaces, nameFaces)
+                cv.loadKnowFacesFromDB(knowFacesPath, knowFaces, nameFaces)
             elif key == ord("h"):
                 h = 1
             elif key == ord("e"):
@@ -114,6 +119,7 @@ def video():
                     print(file_name)
                     cv2.imwrite('./rec/' + file_name + '.jpg', frame)
 
-        cv2.imshow("camara 1", fr[0])
-        cv2.imshow("camara 2", fr[1])
+        cv2.imshow("frame", frame)
+        # cv2.imshow("camara 1", fr[0])
+        # cv2.imshow("camara 2", fr[1])
     cv2.destroyAllWindows()

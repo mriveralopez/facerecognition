@@ -20,7 +20,7 @@ def images(faceCascade):
             flags = cv2.CASCADE_SCALE_IMAGE
         )
 
-        # saveFacesWithRectangle(imagen, rostros, imagen_dir, (255, 0, 0), 2)
-        cv2.saveOnlyFaces(imagen_dir, imagen, rostros)
+        cv.saveFacesWithRectangle(imagen, rostros, imagen_dir, (255, 0, 0), 2)
+        # cv.saveOnlyFaces(imagen_dir, imagen, rostros)
 
     cv2.destroyAllWindows()
