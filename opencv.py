@@ -68,7 +68,7 @@ def loadKnowFacesFromDB(path, knowFaces, nameFaces):
     for employee in employees.json():
         image = face_recognition.load_image_file(path + employee.get('code') + ".png")
         image_encoding = face_recognition.face_encodings(image)[0]
-        name = employee.get('name')
+        name = employee.get('code')
         knowFaces.append(image_encoding)
         nameFaces.append(name)
     print(util.getTime("/", ":") + " know faces loaded from DB")

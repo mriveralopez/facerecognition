@@ -11,6 +11,8 @@ def video():
     cap.append(cv2.VideoCapture(0))
     # cap.append(cv2.VideoCapture(0))
 
+    # cam = cv2.VideoCapture(0)
+
     print(util.getTime("/", ":") + " Video Capture loaded")
 
     knowFacesPath = "./knowFaces/"
@@ -62,6 +64,7 @@ def video():
                 except Exception:
                     face_names.append('Desconocido')
 
+            # Escribir nombre y dibujar cuadro alrededor del rostro
             for (top, right, bottom, left), name in zip(face_locations, face_names):
                 if not name:
                     continue
@@ -93,7 +96,7 @@ def video():
                 if (previousFaces.__contains__(live)):
                     continue
                 else:
-                    io.marcar(live, frame, "dos camaras")
+                    io.marcar(live, frame, "OUT")
                     print(previousFaces)
                     print(liveFaces)
 
